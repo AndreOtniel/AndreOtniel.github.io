@@ -1,0 +1,300 @@
+@font-face {
+  font-family: meaCulpa;
+  src: url(MeaCulpa.ttf);
+}
+
+:root {
+  --pink: #f14e95;
+  --bg: rgb(25, 23, 23);
+  --shadow: 0 2px 2px rgb(0, 0, 0 / 0.5)
+}
+
+body {
+  padding-bottom: 100px;
+}
+
+.hero {
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: var(--bg);
+  position: relative;
+}
+
+.hero img {
+  max-width: 100%;
+  max-height: 42%;
+  object-fit: cover;
+  fill-opacity: var(--pink);
+}
+
+.hero .top-border {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.hero .bottom-border {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transform: rotate(180deg);
+}
+
+.hero h1{
+  font-family: 'Crimson Text', serif;
+  font-size: 4.5rem;
+  font-weight: 700;
+}
+
+.and-container {
+  display: flex;
+  align-items: center;
+}
+
+.and-container h1 {
+  font-size: 2rem;
+  font-family: 'Berkshire Swash', cursive;
+}
+
+.hero h4 {
+  font-family: meaCulpa;
+  font-weight: 400;
+  margin-bottom: 1rem;
+}
+
+.countdown {
+  margin-top: 1rem;
+}
+
+.day-container,
+.hour-container,
+.minute-container,
+.second-container {
+  font-family: 'Times New Roman', Times, serif;
+  flex-direction: column;
+  margin-inline: 10px;
+  border: 1.5px solid rgba(255, 255, 255, 0.3);
+  height: 60px;
+  width: 60px;
+}
+
+.day,
+.hour,
+.minute,
+.second {
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+
+.text {
+  font-size: 0.8rem;
+}
+
+.buka-undangan {
+  position: absolute;
+  bottom: 5px;
+  right: 5px;
+}
+
+.undangan-btn {
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: 500;
+  background-color: var(--bg);
+  color: wheat;
+  border: none;
+  cursor: pointer;
+}
+
+.couple {
+  padding-top: 0;
+  font-family: 'Crimson Text', serif;
+}
+
+.couple h2 {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.couple h6 {
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.couple p {
+  line-height: 2rem;
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+.couple-title {
+  font-family: meaCulpa;
+  font-size: 3rem;
+}
+
+.couple-container {
+  justify-content: space-evenly;
+}
+
+.couple img{
+  width: 100%;
+}
+
+.couple-info{
+  justify-content: start;
+}
+
+.container{
+  padding: 0;
+  margin-inline: auto;
+  justify-content: center;
+}
+
+.card {
+  background-color: var(--bg);
+}
+
+.info {
+  background-color: var(--bg);
+  color: wheat;
+  font-family: 'Crimson Text', serif;
+  margin-inline: auto;
+  width: 35vw;
+  padding-block: 4rem;
+}
+
+.info h2 {
+  font-weight: 600;
+  margin-bottom: 1rem;
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  border-bottom: 1px solid wheat;
+}
+
+.info h6 {
+  font-weight: 700;
+  margin-block: 0.4rem;
+  font-size: 1rem;
+}
+
+.info button {
+  border-radius: 5px;
+  border: none;
+  background-color: var(--bg);
+  color: wheat;
+  font-weight: bold;
+  padding-block: 0.25em;
+  padding-inline: 0.8em;
+  box-shadow: 0 0 10px rgb(130, 103, 84);
+  margin-top: 0.7rem;
+}
+
+/* Media Query */
+@media (min-width : 1200.1px) {
+  html {
+    font-size: 100%;
+  }
+
+  .day-container,
+  .hour-container,
+  .minute-container,
+  .second-container {
+    height: 70px;
+    width: 70px;
+  }
+  
+  .pad-bride {
+    padding: 0 !important;
+  }
+  
+  .pad-groom {
+    padding: 0 !important;
+  }
+
+  .couple {
+    padding: 3rem;
+    padding-bottom: 4rem;
+  }
+
+  .couple-title {
+    margin-bottom: 3rem;
+  }
+
+  .couple .row {
+    padding-inline: 1rem;
+  }
+
+  .couple-title {
+    margin-bottom: 2rem;
+  }
+
+}
+
+@media (max-width : 1200px) {
+  .couple {
+    padding: 2rem 0;
+  }
+
+  .couple .row {
+    padding-inline: 1rem;
+  }
+
+  .couple-title {
+    margin-bottom: 2rem;
+  }
+}
+
+/* Tablet */
+@media (max-width : 767px) {
+
+  html {
+    font-size: 105%;
+  }
+
+  .couple{
+    padding-inline: 10vw;
+  }
+
+  .couple img {
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .couple h2 {
+    margin-top: 2rem;
+  }
+
+  .info {
+    display: block;
+    flex-direction: column;
+    width: 75vw;
+    padding: 0;
+  }
+
+  .info button{
+    width: fit-content;
+    align-self: center;
+  }
+
+  .btn-pad{
+    margin-bottom: 10vh;
+  }
+
+  .card {
+    height: 100vh;
+  }
+
+}
+
+/*Handphone*/
+@media (max-width : 576px) {
+
+  html {
+    font-size: 100%;
+  }
+
+  .info {
+    display: block;
+    width: 75vw;
+    padding: 0;
+  }
+}
