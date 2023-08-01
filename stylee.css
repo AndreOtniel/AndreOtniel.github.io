@@ -57,13 +57,15 @@ body {
 }
 
 .hero h4 {
+  font-size: 2rem;
   font-family: meaCulpa;
   font-weight: 400;
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
 }
 
 .countdown {
-  margin-top: 1rem;
+  margin-top: 2rem;
+  margin-bottom: 3rem;
 }
 
 .day-container,
@@ -99,6 +101,7 @@ body {
 .undangan-btn {
   font-family: 'Courier New', Courier, monospace;
   font-weight: 500;
+  font-size: 1.5rem;
   background-color: var(--bg);
   color: wheat;
   border: none;
@@ -186,6 +189,7 @@ body {
   padding-inline: 0.8em;
   box-shadow: 0 0 10px rgb(130, 103, 84);
   margin-top: 0.7rem;
+  cursor: pointer;
 }
 
 /* Media Query */
@@ -235,7 +239,7 @@ body {
   }
 
   .couple .row {
-    padding-inline: 1rem;
+    padding-inline: 0;
   }
 
   .couple-title {
@@ -289,12 +293,20 @@ body {
 @media (max-width : 576px) {
 
   html {
-    font-size: 100%;
+    font-size: 85%;
   }
 
   .info {
     display: block;
     width: 75vw;
     padding: 0;
+  }
+
+  .day-container,
+  .hour-container,
+  .minute-container,
+  .second-container {
+    height: 50px;
+    width: 50px;
   }
 }
