@@ -293,6 +293,13 @@ body {
     height: 100vh;
   }
 
+  .day-container,
+  .hour-container,
+  .minute-container,
+  .second-container {
+    margin-inline: 1.5rem;
+}
+
 }
 
 /*Handphone*/
