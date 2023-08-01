@@ -297,7 +297,7 @@ body {
   .hour-container,
   .minute-container,
   .second-container {
-    margin-inline: 15px !important;
+    margin-inline: 0.5rem !important;
 }
 
 }
@@ -317,7 +317,7 @@ body {
   .second-container {
     height: 50px;
     width: 50px;
-    margin-inline: 15px !important;
+    margin-inline: 0.5rem !important;
   }
 
 }
