@@ -251,7 +251,7 @@ body {
 @media (max-width : 767px) {
 
   html {
-    font-size: 105%;
+    font-size: 95%;
   }
 
   .couple{
@@ -265,6 +265,12 @@ body {
 
   .couple h2 {
     margin-top: 2rem;
+  }
+
+  .about {
+    display: block;
+    width: 75vw;
+    padding: 0;
   }
 
   .info {
@@ -292,10 +298,6 @@ body {
 /*Handphone*/
 @media (max-width : 576px) {
 
-  html {
-    font-size: 85%;
-  }
-
   .info {
     display: block;
     width: 75vw;
@@ -309,4 +311,5 @@ body {
     height: 50px;
     width: 50px;
   }
+
 }
