@@ -43,16 +43,54 @@
           <div class="text">DETIK</div>
         </div>
       </div>
-      <a class="buka-undangan" href="#undangan"><button class="undangan-btn">UNDANGAN ></button></a>
+      <a class="buka-undangan" href="#couple"><button class="undangan-btn">UNDANGAN ></button></a>
     </section>
 
-    <section id="undangan" class="couple">
+    <nav id="navbar" class="navbar d-flex justify-content-center w-100 sticky-top">
+      <div class="navbar-container d-flex mx-auto">
+        <a href="#hero">
+          <div class="menu d-flex justify-content-center">
+            <i class="bi bi-house-door-fill"></i>
+            <p>Beranda</p>
+          </div>
+        </a>
+        <a href="#couple">
+          <div class="menu d-flex justify-content-center">
+            <i class="bi bi-people-fill"></i>
+            <p>Profil</p>
+          </div>
+        </a>
+        <a href="#acara">
+          <div class="menu d-flex justify-content-center">
+            <i class="bi bi-calendar-minus"></i>
+            <p>Acara</p>
+          </div>
+        </a>
+        <a href="#album">
+          <div class="menu d-flex justify-content-center">
+            <i class="bi bi-image-fill"></i>
+            <p>Album</p>
+          </div>
+        </a>
+        <a href="#ucapan">
+          <div class="menu d-flex justify-content-center">
+            <i class="bi bi-chat-left-text-fill"></i>
+            <p>Ucapan</p>
+          </div>
+        </a>
+      </div>
+    </nav>
+
+    <section id="couple" class="couple">
       <div class="couple-title text-center">Bride & Groom</div>
       <div class="row couple-container mx-auto">
         <div class="col-12 col-md-6 about">
           <div class="row">
-            <div class="col-md-6 nopadding">
-              <img src="contoh.jpg" alt="Juan" class="img-responsive">
+            <div class="col-md-6">
+              <div class="img-instagram">
+                <img src="contoh.jpg" alt="Juan" class="img-responsive">
+                <a href="https://www.instagram.com/juandakemit/" target="_blank" class="instagram"><i class="bi bi-instagram"></i></a>
+              </div>
             </div>
             <div class="col-md-6 pad-bride">
               <h2>JUAN</h2>
@@ -68,15 +106,18 @@
               <h6>Putri dari Marlan Tarigan & Ndameken br Ginting</h6>
               <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Yemima br Tarigan <strong>(MIMA)</strong>, lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum nihil voluptates atque quisquam iusto, asperiores vero minima natus, maxime nemo pariatur eum?</p>
             </div>
-            <div class="col-md-6 nopadding">
-              <img src="contoh.jpg" alt="Mima" class="img-responsive" >
+            <div class="col-md-6">
+              <div class="img-instagram">
+                <img src="contoh.jpg" alt="Juan" class="img-responsive">
+                <a href="https://www.instagram.com/mimmagrace/" target="_blank" class="instagram"><i class="bi bi-instagram"></i></a>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="card justify-content-center">
+    <section id="acara" class="card justify-content-center">
       <div class="row container justify-content-center">
         <div class="col-md-6 text-center info">
           <h2 class="header">Pemberkatan</h2>
@@ -100,6 +141,55 @@
         </div>
       </div>
     </section>
+
+    <section id="album" class="gallery justify-content-center">
+      <div class="row row-cols-md-4 row-cols-sm-3 row-cols-2">
+        <div class="col mt-4">
+          <img src="photo.jpg" alt="" class="img-fluid w-100">
+        </div>
+        <div class="col mt-4">
+          <img src="photo.jpg" alt="" class="img-fluid w-100">
+        </div>
+        <div class="col mt-4">
+          <img src="photo.jpg" alt="" class="img-fluid w-100">
+        </div>
+        <div class="col mt-4">
+          <img src="photo.jpg" alt="" class="img-fluid w-100">
+        </div>
+        <div class="col mt-4">
+          <img src="photo.jpg" alt="" class="img-fluid w-100">
+        </div>
+        <div class="col mt-4">
+          <img src="photo.jpg" alt="" class="img-fluid w-100">
+        </div>
+      </div>
+    </section> 
+
+    <section id="ucapan" class="comment">
+      <div class="row mt-4 w-100 justify-content-center mx-auto form">
+        <div class="col-md-7 col-10 input-comment-container p-0">
+          <input type="text" placeholder="nama" class="nama js-nama w-100">
+          <input type="text" placeholder="ucapan" class="ucapan js-comment w-100 mt-2">
+          <div class="row">
+            <div class="col-1 mt-2 submit-button">Comment</div>
+          </div>
+        </div>
+      </div>
+      <div class="ucapan-container d-flex justify-content-center align-items-center mx-auto mt-3">
+        <div class="add-comment">
+          <div class="comment-container">
+            <div class="profil-picture">S</div>
+            <div class="comment-detail">
+              <div class="nama">Subagdja</div>
+              <div class="comment">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis accusamus, assumenda perferendis nobis corrupti quibusdam dicta natus quasi deserunt.</div>
+              <div class="date">2 Oktober 2023</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="space"></section>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
     <script src="script.js"></script>

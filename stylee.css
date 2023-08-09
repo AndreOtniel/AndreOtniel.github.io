@@ -9,8 +9,9 @@
   --shadow: 0 2px 2px rgb(0, 0, 0 / 0.5)
 }
 
-body {
-  padding-bottom: 100px;
+
+a {
+  text-decoration: none;
 }
 
 .hero {
@@ -92,6 +93,41 @@ body {
   font-size: 0.8rem;
 }
 
+
+/* NAVBAR */
+.navbar-container {
+  flex-direction: row;
+  justify-content: center;
+  background-color: rgb(0 0 0 / 0.8);
+  border-radius: 2px;
+  text-decoration: none;
+}
+
+.navbar {
+  z-index: 100;
+  top: 91vh;
+}
+
+nav .menu{
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+  color: wheat;
+  margin: 0.3rem 1.5rem;
+}
+
+nav p,
+nav i{
+  margin: 0;
+  padding: 0;
+  text-decoration: none !important;
+}
+
+
+.couple {
+  margin-bottom: 2.5rem;
+}
+
 .buka-undangan {
   position: absolute;
   bottom: 5px;
@@ -109,7 +145,6 @@ body {
 }
 
 .couple {
-  padding-top: 0;
   font-family: 'Crimson Text', serif;
 }
 
@@ -132,14 +167,28 @@ body {
 .couple-title {
   font-family: meaCulpa;
   font-size: 3rem;
+  margin-top: 0 !important;
+  margin-bottom: 3rem !important;
 }
 
 .couple-container {
   justify-content: space-evenly;
 }
 
+.img-instagram {
+  position: relative;
+}
+
 .couple img{
   width: 100%;
+}
+
+.instagram {
+  position: absolute;
+  right: 2%;
+  bottom: 1%;
+  font-size: 1.5rem;
+  color: wheat;
 }
 
 .couple-info{
@@ -154,6 +203,7 @@ body {
 
 .card {
   background-color: var(--bg);
+  color: rgb(245, 228, 198);
 }
 
 .info {
@@ -192,6 +242,113 @@ body {
   cursor: pointer;
 }
 
+.ayat {
+  justify-content: space-evenly;
+}
+
+.gallery {
+  min-height: 100vh;
+  background-color: lightcyan;
+  justify-content: center;
+  padding: 3vw;
+}
+
+.comment {
+  margin-top: 3rem;
+  padding-inline: 2rem;
+}
+
+.comment .button {
+  display: block;
+  width: 4rem;
+}
+
+.ucapan-container {
+  max-height: 80vh;
+  max-width: 80vw;
+  flex-direction: column;
+  border: 2px solid gray;
+  padding-left: 0;
+  padding-block: 2rem;
+  overflow: scroll;
+}
+
+.form {
+  margin-bottom: 4vh;
+}
+
+.input-comment-container .nama {
+  padding-left: 0.5rem;
+}
+
+.input-comment-container .ucapan {
+  min-height: 5rem;
+  padding-left: 0.5rem;
+}
+
+.input-comment-container .ucapan::placeholder {
+  position: absolute;
+  top: 0;
+}
+
+.submit-button {
+  margin-left: 11px;
+  border-radius: 5px;
+  width: fit-content;
+  padding: 5px 8px;
+  font-weight: bold;
+  color: white;
+  background-color: rgb(0, 64, 255);
+}
+
+.comment-container {
+  margin-inline: auto;
+  display: grid;
+  grid-template-columns:6vw 60vw;
+  padding-top: 1rem;
+}
+
+.profil-picture {
+  display: flex;
+  height: 50px;
+  width: 50px;
+  background-color: rgb(156, 74, 15);
+  justify-content: center;
+  align-items: center;
+  font-size: 25px;
+  font-weight: bold;
+  border-radius: 50%;
+  margin-top: 4px;
+  margin-inline: auto;
+}
+
+.comment-detail {
+  margin-left: 3rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.comment-detail .nama {
+  font-weight: bold;
+}
+
+.comment-detail .comment {
+  margin-top: 0.2rem;
+  padding: 0;
+}
+
+.comment-detail .date {
+  font-size: 0.8rem;
+  color: gray;
+}
+
+.space {
+  background-color: white;
+  height: 5rem;
+}
+
+
+
 /* Media Query */
 @media (min-width : 1200.1px) {
   html {
@@ -205,50 +362,52 @@ body {
     height: 70px;
     width: 70px;
   }
+
+  .couple-title {
+    font-size: 4rem;
+  }
   
   .pad-bride {
-    padding: 0 !important;
+    padding-left: 1rem !important;
   }
   
   .pad-groom {
-    padding: 0 !important;
+    padding-right: 1rem !important;
   }
 
   .couple {
-    padding: 3rem;
-    padding-bottom: 4rem;
+    padding-block:0 4rem !important;
   }
 
   .couple-title {
-    margin-bottom: 3rem;
+    margin-bottom: 5rem;
   }
 
   .couple .row {
     padding-inline: 1rem;
   }
 
-  .couple-title {
-    margin-bottom: 2rem;
-  }
-
 }
 
 @media (max-width : 1200px) {
-  .couple {
-    padding: 2rem 0;
-  }
 
   .couple .row {
     padding-inline: 0;
   }
 
   .couple-title {
-    margin-bottom: 2rem;
+    font-size: 4.5rem;
+  }
+}
+
+@media (min-width : 762.1px) {
+  .ucapan-container {
+    max-width: 70vw;
   }
 }
 
 /* Tablet */
-@media (max-width : 767px) {
+@media (max-width : 762px) {
 
   html {
     font-size: 95%;
@@ -256,6 +415,13 @@ body {
 
   .couple{
     padding-inline: 10vw;
+    margin-top: 0 !important;
+    padding-bottom: 2rem !important;
+  }
+
+  .couple-title {
+    margin-bottom: 1rem !important;
+    font-size: 3rem;
   }
 
   .couple img {
@@ -298,7 +464,7 @@ body {
   .minute-container,
   .second-container {
     margin-inline: 0.5rem !important;
-}
+  }
 
 }
 
